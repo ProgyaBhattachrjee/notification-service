@@ -4,12 +4,12 @@ This is a simple Node.js-based notification service that sends messages via **em
 
 ## 📦 Features
 
-| Feature           | Description                                      |
-|------------------|--------------------------------------------------|
-| Queue System      | RabbitMQ used to queue notifications             |
-| Email Notifications | Sends emails using Nodemailer                    |
-| SMS Notifications | Sends SMS via Twilio                             |
-| Frontend Form     | Simple HTML form for sending notifications       |
+| Feature             | Description                                |
+| ------------------- | ------------------------------------------ |
+| Queue System        | RabbitMQ used to queue notifications       |
+| Email Notifications | Sends emails using Nodemailer              |
+| SMS Notifications   | Sends SMS via Twilio                       |
+| Frontend Form       | Simple HTML form for sending notifications |
 
 ## 🏗️ Project Structure
 
@@ -38,26 +38,31 @@ Below is a preview of the notification form (`form.html`):
 ## 🛠️ Setup Instructions
 
 1. **Clone the repo**
+
    ```bash
    git clone https://github.com/your-username/notification-service.git
    cd notification-service
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Setup environment variables**
+
    - Copy `.env` to `example.env`
    - Fill in your credentials for RabbitMQ, Twilio, and Email
 
 4. **Run RabbitMQ (with Docker)**
+
    ```bash
    docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
    ```
 
 5. **Start services**
+
    ```bash
    node index.js                 # Starts Express publisher
    node workers/notificationWorker.js  # Starts worker
@@ -81,3 +86,18 @@ TWILIO_PHONE_NUMBER=+1XXXXXXXXXX
 ---
 
 Made with ❤️ using Node.js, RabbitMQ, Nodemailer, and Twilio.
+
+## Demo
+
+Here is the RabbitMQ dashboard showing the queue:
+
+![RabbitMQ Dashboard](assets/rabbitmq.png)
+
+Here is the frontend form to send notifications:
+
+![Server Logs](asstets/form.png)
+
+Notification received on phone:
+
+![SMS Received](asstets/sms.jpg)
+![Mail Received](asstets/email.jpg)
