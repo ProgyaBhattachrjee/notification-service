@@ -33,7 +33,7 @@ notification-service/
 
 Below is a preview of the notification form (`form.html`):
 
-![Form Preview](https://i.imgur.com/YOUR_FORM_IMAGE.png)
+![Form](assets/form.png)
 
 ## 🛠️ Setup Instructions
 
@@ -92,10 +92,6 @@ Made with ❤️ using Node.js, RabbitMQ, Nodemailer, and Twilio.
 Here is the RabbitMQ dashboard showing the queue:
 
 ![RabbitMQ Dashboard](assets/rabbitmq.png)
-
-Here is the frontend form to send notifications:
-
-![Server Logs](assets/form.png)
 
 Notification received on phone:
 
