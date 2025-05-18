@@ -95,9 +95,9 @@ Here is the RabbitMQ dashboard showing the queue:
 
 Here is the frontend form to send notifications:
 
-![Server Logs](asstets/form.png)
+![Server Logs](assets/form.png)
 
 Notification received on phone:
 
-![SMS Received](asstets/sms.jpg)
-![Mail Received](asstets/email.jpg)
+![SMS Received](assets/sms.jpg)
+![Mail Received](assets/email.jpg)
