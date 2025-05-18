@@ -26,6 +26,7 @@ notification-service/
 ├── .env                      # Environment variables (excluded from git)
 ├── example.env               # Sample environment config
 ├── .gitignore
+├── assets/                   #screenshots
 └── README.md
 ```
 
